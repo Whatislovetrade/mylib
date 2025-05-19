@@ -1,0 +1,10 @@
+// utils/_color.scss
+@use 'sass:color';
+
+@function lighten-color($color, $amount) {
+  @return color.adjust($color, $lightness: $amount);
+}
+
+@function darken-color($color, $amount) {
+    @return color.adjust($color, $lightness: -$amount);
+}

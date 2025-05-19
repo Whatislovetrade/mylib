@@ -1,0 +1,116 @@
+@use '../general/variables';
+@use '../utils/color';
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid variables.$primary;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    color: variables.$dark;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1.5;
+    transition: all 0.2s ease-in;
+    &:hover {
+        background-color: color.darken-color(variables.$primary, 5%);
+    }
+
+    &-primary {
+        background-color: variables.$primary;
+        border-color: variables.$primary;
+        color: #fff;
+        &:hover {
+            background-color: color.darken-color(variables.$primary, 10%);
+        }
+    }
+
+    &-success {
+        background-color: variables.$success;
+        border-color: variables.$success;
+        color: #fff;
+        &:hover {
+            background-color: color.darken-color(variables.$success, 5%);
+        }
+    }
+
+    &-danger {
+        background-color: variables.$danger;
+        border-color: variables.$danger;
+        color: #fff;
+        &:hover {
+            background-color: color.darken-color(variables.$danger, 5%);
+        }
+    }
+
+    &-warning {
+        background-color: variables.$warning;
+        border-color: variables.$warning;
+        color: #fff;
+        &:hover {
+            background-color: color.darken-color(variables.$warning, 5%);
+        }
+    }
+
+    &-dark {
+        background-color: variables.$dark;
+        border-color: variables.$dark;
+        color: #fff;
+        &:hover {
+            background-color: color.darken-color(variables.$dark, 5%); 
+        }
+    }
+
+    &-outline-primary {
+        border-color: variables.$primary;
+        color: variables.$primary;
+        &:hover {
+            background-color: variables.$primary;
+            color: #fff;
+        }
+    }
+
+    &-outline-success {
+        border-color: variables.$success;
+        color: variables.$success;
+        &:hover {
+            background-color: variables.$success;
+            color: #fff;
+        }
+    }
+
+    &-outline-danger {
+        border-color: variables.$danger;
+        color: variables.$danger;
+        &:hover {
+            background-color: variables.$danger;
+            color: #fff;
+        }
+    }
+
+    &-outline-warning {
+        border-color: variables.$warning;
+        color: variables.$warning;
+        &:hover {
+            background-color: variables.$warning;
+            color: #fff;
+        }
+    }
+
+    &-outline-dark {
+        border-color: variables.$dark;
+        color: variables.$dark;
+        &:hover {
+            background-color: variables.$dark;
+            color: #fff;
+        }
+    }
+
+    &-block {
+        display: block;
+        width: 100%;
+    }
+}
